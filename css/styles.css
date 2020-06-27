@@ -1,0 +1,106 @@
+.navbar {
+    background-color: black;
+}
+.heading{
+    margin-top: 5%;
+}
+
+.blogs p{
+    font-size: 12px;
+}
+
+img{
+    width: 330px;
+}
+
+.search{
+    position: absolute;
+    margin-left: 60%;
+    margin-top: -3%;
+}
+
+input[type="search"]{
+    border-radius: 25px;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: white;
+}
+
+@media (max-width: 480px) and (min-width: 320px){
+    img{
+        width: 110px;
+    }
+
+    .heading h3{
+        font-size: 13px;
+    }
+    #search {
+        margin-top: -25%;
+        margin-left: -15%;
+    }
+    #blogs h5{
+        font-size: 14px;
+    }
+    #blogs p{
+        font-size: 10px;
+    }
+    .copyright p{
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 767px) and (min-width: 481px){
+    img{
+        width: 219px;
+    }
+
+    .heading h3{
+        font-size: 20px;
+    }
+    .search {
+        margin-top: -6%;
+        margin-left: 39%;
+        width: 40%;
+    }
+
+    #blogs h5{
+        font-size: 20px;
+    }
+    #blogs p{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 1024px) and (min-width: 768px){
+    img{
+        width: 192px;
+    }
+
+    #blogs h5{
+        font-size: 20px;
+    }
+
+    .search{
+        margin-top: -7%;
+    }
+
+    #blogs p{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 1024px) and (min-width: 768px) and (orientation: landscape){
+    img{
+        width: 270px;
+    }
+
+    .search{
+        margin-top: -4%;
+    }
+}
