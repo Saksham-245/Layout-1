@@ -1,40 +1,38 @@
-function removeElement(){
-    var myObj = document.getElementById("div1");
-    myObj.remove();
-}
+const button = document.getElementById('click');
+const button2 = document.getElementById('click2');
+const button3 = document.getElementById('click3');
+const button4 = document.getElementById('click4');
+const button5 = document.getElementById('click5');
+const button6 = document.getElementById('click6');
+const button7 = document.getElementById('click7');
+const button8 = document.getElementById('click8');
+const button9 = document.getElementById('click9');
 
-function removeElement2(){
-    var myObj2 = document.getElementById("div2")
-    myObj2.remove();
-}
-function removeElement3(){
-    var myObj3 = document.getElementById("div3")
-    myObj3.remove();
-}
-function removeElement4(){
-    var myObj4 = document.getElementById("div4")
-    myObj4.remove();
-}
-function removeElement5(){
-    var myObj5 = document.getElementById("div5")
-    myObj5.remove();
-}
+button.addEventListener('click', function() {
+    document.getElementById('div1').remove();
+})
 
-function removeElement6(){
-    var myObj6 = document.getElementById("div6")
-    myObj6.remove();
-}
-function removeElement7(){
-    var myObj7 = document.getElementById("div7")
-    myObj7.remove();
-}
-
-function removeElement8(){
-    var myObj8 = document.getElementById("div8")
-    myObj8.remove();
-}
-
-function removeElement9(){
-    var myObj9= document.getElementById("div9")
-    myObj9.remove();
-}
+button2.addEventListener('click', function() {
+    document.getElementById('div2').remove();
+})
+button3.addEventListener('click', function() {
+    document.getElementById('div3').remove();
+})
+button4.addEventListener('click', function() {
+    document.getElementById('div4').remove();
+})
+button5.addEventListener('click', function() {
+    document.getElementById('div5').remove();
+})
+button6.addEventListener('click', function() {
+    document.getElementById('div6').remove();
+})
+button7.addEventListener('click', function() {
+    document.getElementById('div7').remove();
+})
+button8.addEventListener('click', function() {
+    document.getElementById('div8').remove();
+})
+button9.addEventListener('click', function() {
+    document.getElementById('div9').remove();
+})

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -7,19 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout 1</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-          $("#search").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $(".blogs h5").filter(function() {
-              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
-          });
-        });
-        </script>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-black">
         <a href="#" class="navbar-brand" style="color: white;">Layout 1</a>
@@ -45,82 +36,108 @@
             <h3>
                 Page Heading
                 <small class="text-muted">Secondary Text</small>
-              </h3>
-              <div class="search">
+            </h3>
+            <div class="search">
                 <form class="form-inline my-2 my-lg-0">
                     <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
-              </div>    
+            </div>
         </div>
         <hr>
         <div id="blogs">
             <div class="row">
                 <div class="col-6 col-md-4" id="div1">
                     <img src="/img/pic1.jpg" alt="" srcset="">
-                    <h5><a href="#" style="text-decoration: none;">Project Name</a><button style="float: right;" onclick="removeElement()" class="btn btn-primary-outline"><span class="material-icons" style="float: right;color: red;">
+                    <h5><a href="#" style="text-decoration: none;">Project Name 1</a>
+                        <button style="float: right;" class="btn btn-primary-outline"><span id="click" class="material-icons" style="float: right;color: red;">
                         delete
                         </span></button></h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt eligendi!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt
+                        eligendi!
+                    </p>
                 </div>
-                <div class="col-6 col-md-4" id="div2">
+                <div class="col-6 col-md-4 " id="div2">
                     <img src="/img/pic1.jpg" alt="" srcset="">
-                    <h5><a href="#" style="text-decoration: none;">Project Name </a><button style="float: right;" onclick="removeElement2()" class="btn btn-primary-outline"><span class="material-icons" style="float: right;color: red;">
+                    <h5><a href="#" style="text-decoration: none;">Project Name 2</a>
+                        <button style="float: right;" class="btn btn-primary-outline"><span id="click2" class="material-icons" style="float: right;color: red;">
                         delete
                         </span></button></h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt eligendi!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt
+                        eligendi!
+                    </p>
                 </div>
                 <div class="col-6 col-md-4" id="div3">
                     <img src="/img/pic1.jpg" alt="" srcset="">
-                    <h5><a href="#" style="text-decoration: none;">Project Name</a><button style="float: right;" onclick="removeElement3()" class="btn btn-primary-outline"><span class="material-icons" style="float: right;color: red;">
+                    <h5><a href="#" style="text-decoration: none;">Project Name 3</a>
+                        <button style="float: right;" class="btn btn-primary-outline"><span id="click3" class="material-icons" style="float: right;color: red;">
                         delete
                         </span></button></h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt eligendi!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt
+                        eligendi!
+                    </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-6 col-md-4" id="div4">
                     <img src="/img/pic1.jpg" alt="" srcset="">
-                    <h5><a href="#" style="text-decoration: none;">Project Name</a><button style="float: right;" onclick="removeElement4()" class="btn btn-primary-outline"><span class="material-icons" style="float: right;color: red;">
+                    <h5><a href="#" style="text-decoration: none;">Project Name 4</a>
+                        <button style="float: right;" class="btn btn-primary-outline"><span id="click4" class="material-icons" style="float: right;color: red;">
                         delete
                         </span></button></h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt eligendi!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt
+                        eligendi!
+                    </p>
                 </div>
                 <div class="col-6 col-md-4" id="div5">
                     <img src="/img/pic1.jpg" alt="" srcset="">
-                    <h5><a href="#" style="text-decoration: none;">Project Name</a><button style="float: right;" onclick="removeElement5()" class="btn btn-primary-outline"><span class="material-icons" style="float: right;color: red;">
+                    <h5><a href="#" style="text-decoration: none;">Project Name 5</a>
+                        <button style="float: right;" class="btn btn-primary-outline"><span id="click5" class="material-icons" style="float: right;color: red;">
                         delete
                         </span></button></h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt eligendi!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt
+                        eligendi!
+                    </p>
                 </div>
                 <div class="col-6 col-md-4" id="div6">
                     <img src="/img/pic1.jpg" alt="" srcset="">
-                    <h5><a href="#" style="text-decoration: none;">Project Name</a><button style="float: right;" onclick="removeElement6()" class="btn btn-primary-outline"><span class="material-icons" style="float: right;color: red;">
+                    <h5><a href="#" style="text-decoration: none;">Project Name 6</a>
+                        <button style="float: right;" class="btn btn-primary-outline"><span id="click6" class="material-icons" style="float: right;color: red;">
                         delete
                         </span></button></h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt eligendi!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt
+                        eligendi!
+                    </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-6 col-md-4" id="div7">
                     <img src="/img/pic1.jpg" alt="" srcset="">
-                    <h5><a href="#" style="text-decoration: none;">Project Name</a><button style="float: right;" onclick="removeElement7()" class="btn btn-primary-outline"><span class="material-icons" style="float: right;color: red;">
+                    <h5><a href="#" style="text-decoration: none;">Project Name 7</a><button style="float: right;" class="btn btn-primary-outline"><span id="click7" class="material-icons" style="float: right;color: red;">
                         delete
                         </span></button></h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt eligendi!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt
+                        eligendi!
+                    </p>
                 </div>
                 <div class="col-6 col-md-4" id="div8">
                     <img src="/img/pic1.jpg" alt="" srcset="">
-                    <h5><a href="#" style="text-decoration: none;">Project Name</a><button style="float: right;" onclick="removeElement8()" class="btn btn-primary-outline"><span class="material-icons" style="float: right;color: red;">
+                    <h5><a href="#" style="text-decoration: none;">Project Name 8</a>
+                        <button style="float: right;" class="btn btn-primary-outline"><span id="click8" class="material-icons" style="float: right;color: red;">
                         delete
                         </span></button></h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt eligendi!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt
+                        eligendi!
+                    </p>
                 </div>
                 <div class="col-6 col-md-4" id="div9">
                     <img src="/img/pic1.jpg" alt="" srcset="">
-                    <h5><a href="#" style="text-decoration: none;">Project Name</a><button style="float: right;" onclick="removeElement9()" class="btn btn-primary-outline"><span class="material-icons" style="float: right;color: red;">
+                    <h5><a href="#" style="text-decoration: none;">Project Name 9</a>
+                        <button style="float: right;" class="btn btn-primary-outline"><span id="click9" class="material-icons" style="float: right;color: red;">
                         delete
                         </span></button></h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt eligendi!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorum cum cumque accusantium quaerat molestiae autem itaque repudiandae explicabo maiores veniam temporibus distinctio, earum, cupiditate minus neque officiis deserunt
+                        eligendi!
+                    </p>
                 </div>
             </div>
         </div>
@@ -132,5 +149,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0f00a11d8b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
