@@ -1,38 +1,47 @@
-const button = document.getElementById('click');
-const button2 = document.getElementById('click2');
-const button3 = document.getElementById('click3');
-const button4 = document.getElementById('click4');
-const button5 = document.getElementById('click5');
-const button6 = document.getElementById('click6');
-const button7 = document.getElementById('click7');
-const button8 = document.getElementById('click8');
-const button9 = document.getElementById('click9');
+const rowContainer = document.querySelector(".row");
 
-button.addEventListener('click', function() {
-    document.getElementById('div1').remove();
-})
+const getData = () => {
+  fetch("data.json")
+    .then((res) => res.json())
+    .then((data) =>
+      data.forEach((t, i = 0) => {
+        const html = `
+                <div class="col-6 col-md-4">
+                    <img src="${t.image}" alt="" srcset="">
+                    <h5><a href="#" style="text-decoration: none;">${t.name} ${
+          i + 1
+        }</a>
+                        <button style="float: right;" onClick="deletePost(${
+                          t.id
+                        })" class="btn btn-primary-outline"><span id="click" class="material-icons" style="float: right;color: red;">
+                        delete
+                        </span></button></h5>
+                    <p>${t.description}
+                    </p>
+                </div>
+        `;
+        rowContainer.insertAdjacentHTML("afterbegin", html);
+      })
+    );
+};
 
-button2.addEventListener('click', function() {
-    document.getElementById('div2').remove();
-})
-button3.addEventListener('click', function() {
-    document.getElementById('div3').remove();
-})
-button4.addEventListener('click', function() {
-    document.getElementById('div4').remove();
-})
-button5.addEventListener('click', function() {
-    document.getElementById('div5').remove();
-})
-button6.addEventListener('click', function() {
-    document.getElementById('div6').remove();
-})
-button7.addEventListener('click', function() {
-    document.getElementById('div7').remove();
-})
-button8.addEventListener('click', function() {
-    document.getElementById('div8').remove();
-})
-button9.addEventListener('click', function() {
-    document.getElementById('div9').remove();
-})
+// const renderItems = (data) => {
+//   const html = `
+//                 <div class="col-6 col-md-4">
+//                     <img src="${data.image}" alt="" srcset="">
+//                     <h5><a href="#" style="text-decoration: none;">${data.name}</a>
+//                         <button style="float: right;" class="btn btn-primary-outline"><span id="click" class="material-icons" style="float: right;color: red;">
+//                         delete
+//                         </span></button></h5>
+//                     <p>${data.description}
+//                     </p>
+//                 </div>
+//         `;
+//   rowContainer.insertAdjacentHTML("afterbegin", html);
+// };
+
+const deletePost = (id) => {
+  console.log(id);
+};
+
+getData();
